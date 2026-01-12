@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             // Send via FormSubmit.co (Free service for static sites)
-            fetch("https://formsubmit.co/ajax/kyp.nkl@gmail.com", {
+            fetch("https://formsubmit.co/ajax/raicomputersnkl@gmail.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -60,6 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     Email: email,
                     Phone: phone,
                     _subject: subject, // Helper for email subject line
+                    _captcha: "false", // Disable captcha to prevent blocking
+                    _template: "table", // Use table template for better formatting
                     Subject: subject,  // Field to show in email body
                     Message: message
                 })
